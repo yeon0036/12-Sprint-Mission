@@ -75,7 +75,7 @@ function buttonOn() {
   if (!passwordConfirmationValue) {
     passwordConfirmationError.innerHTML = "비밀번호를 재입력해주세요.";
     passwordConfirmationInput.classList.add("error");
-  } else if (!passwordConfirmationValid) {
+  } else if (!passwordConfirmationVaild) {
     passwordConfirmationError.innerHTML = "비밀번호가 일치하지 않습니다.";
     passwordConfirmationInput.classList.add("error");
   } else {
