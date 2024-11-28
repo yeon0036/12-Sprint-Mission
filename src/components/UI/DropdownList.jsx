@@ -13,5 +13,8 @@ function DropdownList({ onSortSelection }) {
     </div>
   );
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> f80040d (fixed)
 export default DropdownList;

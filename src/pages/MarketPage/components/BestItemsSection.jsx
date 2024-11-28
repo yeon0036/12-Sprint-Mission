@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import React from "react";
 import { useState, useEffect } from "react";
+=======
+import React, { useEffect, useState } from "react";
+>>>>>>> f80040d (fixed)
 import ItemCard from "./ItemCard";
 import { getProducts } from "../../../api/itemApi";
 
@@ -31,6 +35,7 @@ function BestItemsSection() {
       setPageSize(getPageSize());
     };
 
+<<<<<<< HEAD
     // 이벤트 리스너 추가
     window.addEventListener("resize", handleResize);
 
@@ -39,6 +44,13 @@ function BestItemsSection() {
     fetchSortedData({ orderBy: "favorite", pageSize });
 
     // 이벤트 리스너 제거 (*이벤트 중첩 방지)
+=======
+    // 화면 크기 변경할 때마다 pageSize를 다시 계산해 넣음
+    window.addEventListener("resize", handleResize);
+    fetchSortedData({ orderBy: "favorite", pageSize });
+
+    // Cleanup function
+>>>>>>> f80040d (fixed)
     return () => {
       window.removeEventListener("resize", handleResize);
     };

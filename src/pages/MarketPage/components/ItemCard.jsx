@@ -3,6 +3,7 @@ import { ReactComponent as HeartIcon } from "../../../assets/images/icons/ic_hea
 
 function ItemCard({ item }) {
   return (
+<<<<<<< HEAD
     <div className="itemcard">
       <img src={item.images[0]} alt={item.name} className="itemCardThumbnail" />
       <div className="itemSummary">
@@ -13,6 +14,13 @@ function ItemCard({ item }) {
           )}
           원
         </p>
+=======
+    <div className="itemCard">
+      <img src={item.images[0]} alt={item.name} className="itemCardThumbnail" />
+      <div className="itemSummary">
+        <h2 className="itemName">{item.name}</h2>
+        <p className="itemPrice">{item.price.toLocaleString()}원</p>
+>>>>>>> f80040d (fixed)
         <div className="favoriteCount">
           <HeartIcon />
           {item.favoriteCount}

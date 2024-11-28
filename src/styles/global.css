@@ -113,6 +113,16 @@ footer {
   padding: 0 16px;
 }
 
+<<<<<<< HEAD
+=======
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0.02em;
+}
+
+>>>>>>> f80040d (fixed)
 .button {
   background-color: var(--blue);
   color: #ffffff;
