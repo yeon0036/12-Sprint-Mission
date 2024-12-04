@@ -1,0 +1,57 @@
+.file-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.file-input-placeholder {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+}
+
+.file-input-preview-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* 미리보기 이미지 스타일 */
+.file-input-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.file-input-clear-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file-input-hidden {
+  display: none;
+}
+
+.file-input-error {
+  color: red;
+  font-size: 12px;
+}
