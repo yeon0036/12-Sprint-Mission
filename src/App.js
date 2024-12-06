@@ -13,11 +13,11 @@ function App() {
 
       <div className="withHeader">
         <Routes>
-          <Route index element={<Hompage />} />
-          <Route path="/item" element={<MarketPage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/additem" element={<AddItemPage />} />
-          <Route path="/community" element={<CommunityFeedPage />} />
+          <Route index element={<HomePage />} />
+          <Route path="login" element={<LoginPage />} />
+          <Route path="items" element={<MarketPage />} />
+          <Route path="additem" element={<AddItemPage />} />
+          <Route path="community" element={<CommunityFeedPage />} />
         </Routes>
       </div>
     </BrowserRouter>

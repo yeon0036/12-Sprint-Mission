@@ -35,7 +35,6 @@ function AllItemsSection() {
 
   const handleSortSelection = (sortOption) => {
     setOrderBy(sortOption);
-
     setIsDropdownVisible(false);
   };
 
@@ -67,6 +66,7 @@ function AllItemsSection() {
     <div>
       <div className="allItemsSectionHeader">
         <h1 className="sectionTitle">전체 상품</h1>
+
         <Link to="/additem" className="loginLink button">
           상품 등록하기
         </Link>

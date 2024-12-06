@@ -9,9 +9,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     "react-paginate": "^8.2.0",
 >>>>>>> React-정혜연-sprint6
+=======
+>>>>>>> c20238f3d1067618eaf8bd5e79e46823cdf525cb
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"

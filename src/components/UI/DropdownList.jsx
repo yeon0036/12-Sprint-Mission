@@ -14,7 +14,10 @@ function DropdownList({ onSortSelection }) {
   );
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> React-정혜연-sprint6
+=======
+>>>>>>> c20238f3d1067618eaf8bd5e79e46823cdf525cb
 export default DropdownList;
