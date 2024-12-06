@@ -3,11 +3,16 @@ import { ReactComponent as HeartIcon } from "../../../assets/images/icons/ic_hea
 
 function ItemCard({ item }) {
   return (
-    <div className="itemCard">
+    <div className="itemcard">
       <img src={item.images[0]} alt={item.name} className="itemCardThumbnail" />
       <div className="itemSummary">
         <h2 className="itemName">{item.name}</h2>
-        <p className="itemPrice">{item.price.toLocaleString()}원</p>
+        <p className="itemPrice">
+          {item.price.toLocaleString(
+            ("ko-KR", { style: "currency", currency: "KRW" })
+          )}
+          원
+        </p>
         <div className="favoriteCount">
           <HeartIcon />
           {item.favoriteCount}
