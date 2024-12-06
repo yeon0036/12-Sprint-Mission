@@ -1,22 +1,20 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { getProducts } from "../../../api/itemApi";
 import ItemCard from "./ItemCard";
+import PagenationBar from "../../../components/UI/PaginationBar";
 import { ReactComponent as SortIcon } from "../../../assets/images/icons/ic_sort.svg";
 import { ReactComponent as SearchIcon } from "../../../assets/images/icons/ic_search.svg";
-import { Link } from "react-router-dom";
 import DropdownList from "../../../components/UI/DropdownList";
-import PaginationBar from "../../../components/UI/PaginationBar";
 
 const getPageSize = () => {
   const width = window.innerWidth;
+
   if (width < 768) {
-    // Mobile viewport
     return 4;
   } else if (width < 1280) {
-    // Tablet viewport
     return 6;
   } else {
-    // Desktop viewport
     return 10;
   }
 };
@@ -37,6 +35,7 @@ function AllItemsSection() {
 
   const handleSortSelection = (sortOption) => {
     setOrderBy(sortOption);
+
     setIsDropdownVisible(false);
   };
 
@@ -45,20 +44,21 @@ function AllItemsSection() {
       setPageSize(getPageSize());
     };
 
-    // 화면 크기 변경할 때마다 pageSize를 다시 계산해 넣음
+    //화면크기 변경시 페이지사이즈 다시 계산
     window.addEventListener("resize", handleResize);
     fetchSortedData({ orderBy, page, pageSize });
 
-    // Cleanup function
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, [orderBy, page, pageSize]);
 
+  //토글 드롭다운 기본값
   const toggleDropdown = () => {
     setIsDropdownVisible(!isDropdownVisible);
   };
 
+  //전달받은 pageNumbber로 페이지 적용(setPage)
   const onPageChange = (pageNumber) => {
     setPage(pageNumber);
   };
@@ -66,7 +66,7 @@ function AllItemsSection() {
   return (
     <div>
       <div className="allItemsSectionHeader">
-        <h1 className="sectionTitle">판매 중인 상품</h1>
+        <h1 className="sectionTitle">전체 상품</h1>
         <Link to="/additem" className="loginLink button">
           상품 등록하기
         </Link>
@@ -77,7 +77,7 @@ function AllItemsSection() {
           <SearchIcon />
           <input
             className="searchBarInput"
-            placeholder="검색할 상품을 입력해 주세요"
+            placeholder="검색할 상품을 입력해주세요"
           />
         </div>
         <div className="sortButtonWrapper">

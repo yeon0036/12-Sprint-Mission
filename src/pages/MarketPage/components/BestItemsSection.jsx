@@ -5,13 +5,10 @@ import { getProducts } from "../../../api/itemApi";
 const getPageSize = () => {
   const width = window.innerWidth;
   if (width < 768) {
-    // Mobile viewport
     return 1;
   } else if (width < 1280) {
-    // Tablet viewport
     return 2;
   } else {
-    // Desktop viewport
     return 4;
   }
 };
@@ -30,11 +27,15 @@ function BestItemsSection() {
       setPageSize(getPageSize());
     };
 
-    // 화면 크기 변경할 때마다 pageSize를 다시 계산해 넣음
+    // 이벤트 리스너 추가
     window.addEventListener("resize", handleResize);
+
+    // 디팬던시 배열이 변경되면 하위 코드 실행
+
+    // 가져온 데이터 나타내기
     fetchSortedData({ orderBy: "favorite", pageSize });
 
-    // Cleanup function
+    // 이벤트 리스너 제거 (*이벤트 중첩 방지)
     return () => {
       window.removeEventListener("resize", handleResize);
     };

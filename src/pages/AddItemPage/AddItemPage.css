@@ -1,0 +1,56 @@
+input,
+textarea {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background-color: #f3f4f6;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.ProductPostForm label {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 16px;
+}
+
+textarea {
+  height: 282px;
+}
+
+.AddItemNav {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register-button {
+  background-color: #9ca3af;
+  padding: 12px 23px;
+  border-radius: 8px;
+  height: 42px;
+  font-display: 16px;
+  font-weight: 600;
+}
+
+/* Tablet styles */
+
+@media (min-width: 768px) {
+  Form {
+    margin: 0 24px;
+  }
+}
+
+/* Desktop styles */
+
+@media (min-width: 1280px) {
+  Form {
+    margin: 0 360px;
+  }
+}

@@ -13,4 +13,8 @@ function DropdownList({ onSortSelection }) {
     </div>
   );
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> React-정혜연-sprint6
 export default DropdownList;
