@@ -9,9 +9,13 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "react-paginate": "^8.2.0",
 =======
 >>>>>>> f80040d (fixed)
+=======
+    "react-paginate": "^8.2.0",
+>>>>>>> c67bc75 (Sprint Mission 5 Final)
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
     "styled-components": "^6.1.13",

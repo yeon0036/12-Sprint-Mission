@@ -14,7 +14,11 @@ function DropdownList({ onSortSelection }) {
   );
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> f80040d (fixed)
+=======
+
+>>>>>>> c67bc75 (Sprint Mission 5 Final)
 export default DropdownList;

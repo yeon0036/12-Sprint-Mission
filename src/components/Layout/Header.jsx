@@ -1,5 +1,6 @@
 import React from "react";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../assets/images/logo/logo.svg";
 import "./Header.css";
@@ -10,19 +11,28 @@ function getLinkStyle({ isActive }) {
   };
 =======
 import Logo from "../../assets/images/logo/logo.svg";
+=======
+>>>>>>> c67bc75 (Sprint Mission 5 Final)
 import { Link, NavLink } from "react-router-dom";
+import Logo from "../../assets/images/logo/logo.svg";
 import "./Header.css";
 
-// react-router-dom의 NavLink를 이용하면 활성화된 네비게이션 항목을 하이라이트해줄 수 있어요!
 function getLinkStyle({ isActive }) {
+<<<<<<< HEAD
   return { color: isActive ? "var(--blue)" : undefined };
 >>>>>>> f80040d (fixed)
+=======
+  return {
+    color: isActive ? "var(--blue)" : undefined,
+  };
+>>>>>>> c67bc75 (Sprint Mission 5 Final)
 }
 
 function Header() {
   return (
     <header className="globalHeader">
       <div className="headerLeft">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <Link to="/" className="headerLogo">
           <img src={Logo} alt="판다마켓 로고" />
@@ -33,6 +43,11 @@ function Header() {
         </Link>
 
 >>>>>>> f80040d (fixed)
+=======
+        <Link to="/" className="headerLogo">
+          <img src={Logo} alt="판다마켓 로고" />
+        </Link>
+>>>>>>> c67bc75 (Sprint Mission 5 Final)
         <nav>
           <ul>
             <li>
@@ -42,10 +57,14 @@ function Header() {
             </li>
             <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
               <NavLink to="/item" style={getLinkStyle}>
 =======
               <NavLink to="/items" style={getLinkStyle}>
 >>>>>>> f80040d (fixed)
+=======
+              <NavLink to="/item" style={getLinkStyle}>
+>>>>>>> c67bc75 (Sprint Mission 5 Final)
                 중고마켓
               </NavLink>
             </li>
@@ -53,12 +72,15 @@ function Header() {
         </nav>
       </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
       <Link to="/login" className="loginLink button">
         로그인
       </Link>
 >>>>>>> f80040d (fixed)
+=======
+>>>>>>> c67bc75 (Sprint Mission 5 Final)
     </header>
   );
 }
